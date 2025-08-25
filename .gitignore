@@ -5,6 +5,8 @@
 .env
 /rd
 /docs
+/mysql
+/public/*
 !/public/index.php
 !/public/.htaccess
 !/public/nginx.htaccess
