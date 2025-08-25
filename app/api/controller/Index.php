@@ -14,4 +14,14 @@ class Index extends BaseController
     {
         return 'hello,' . $name;
     }
+
+    public function test(){
+        $ret = getRandChar(10);
+        echo "<pre>";
+        var_dump($ret);
+        echo "</pre>";
+        exit();
+            
+        echo 31111;
+    }
 }
