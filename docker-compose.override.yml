@@ -1,0 +1,15 @@
+# @format
+# Docker Compose PHP 专用配置文件
+# 只配置 PHP 服务，保持 MySQL 使用默认配置
+
+services:
+  # PHP 服务配置
+  water:
+    # PHP 持久化卷映射
+    volumes:
+      - ./:/opt/www
+      - ./runtime:/tmp/runtime
+      - ./docs/docker/php.ini:/etc/php7/conf.d/99_custom.ini
+    
+    # 重启策略
+    restart: unless-stopped

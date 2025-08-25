@@ -1,0 +1,15 @@
+/.idea
+/.vscode
+/vendor
+*.log
+.env
+/rd
+/docs
+!/public/index.php
+!/public/.htaccess
+!/public/nginx.htaccess
+!/public/robots.txt
+!/public/router.php
+!/public/static
+/runtime
+msg.log
